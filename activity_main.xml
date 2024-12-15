@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
+
+    <TextView
+        android:id="@+id/textChooseComputer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Wybierz Komputer:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <Spinner
+        android:id="@+id/spinnerComputer"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dodatki:"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <ImageView
+            android:id="@+id/imageMouse"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/mouse_image"
+            android:layout_marginEnd="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkMouse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Myszka Dell MS116, cena: 35 zł"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <ImageView
+            android:id="@+id/imageKeyboard"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/keyboard_image"
+            android:layout_marginEnd="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkKeyboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Klawiatura TITANUM TK101, cena: 19 zł"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:id="@+id/imageWebcam"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/webcam_image"
+            android:layout_marginEnd="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkWebcam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kamera DUXO WEBCAM-X13, cena: 89 zł"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textTotalPriceLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cena Zamówienia:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp" />
+
+    <TextView
+        android:id="@+id/textTotalPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0 zł"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Imię i nazwisko lub nazwa firmy"
+        android:padding="8dp"
+        android:textSize="16sp"
+        android:background="@android:drawable/edit_text"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Zamów"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/buttonSendEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Wyślij Email"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="8dp" />
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_orders"
+        android:title="Lista Zamówień"
+        />
+    <item android:id="@+id/menu_info"
+        android:title="Informacje o Autorze"
+        />
+    <item android:id="@+id/menu_sms"
+        android:title="Wyślij SMS"
+        />
+    <item android:id="@+id/menu_save_cart"
+        android:title="Zapisz ustawienia koszyka"
+        />
+    <item android:id="@+id/menu_share_cart"
+        android:title="Udostępnij zawartość koszyka"
+        />
+</menu>
